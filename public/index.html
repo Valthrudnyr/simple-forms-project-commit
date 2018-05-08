@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <h1> Register as a new User</h1>
+
+    <div id="root"></div>
+<form id="frml">
+  First Name: <input id="fname" type="text" placeholder="Enter First Name" required><br>
+  Last Name: <input id="lname" type="text" placeholder="Enter Last Name"><br>
+  Birthday: <input id="dob" type="date" placeholder="Enter Date of Birth" required><br>
+  Age: <input id="age" type="text" placeholder="Enter Age"><br>
+  Email: <input id="email" type="text" placeholder="Enter Email"><br>
+  Phone: <input id="phone" type="text" placeholder="Enter Phone Number"><br>
+  Favorite Color: <input id="color" type="color" placeholder="Enter Favorite Color"><br>
+  Password: <input id="password" type="password" placeholder="Provide Password" required><br>
+  Password Confirmation: <input id="passwordconf" type="password" placeholder="Confirm Password" required><br>
+
+  <br>
+  <input type="submit">
+  <input type="button" onclick="clickHandler()" Value="Print">
+  <input type="button" onclick="clickHandler()" Value="Forgot Password">
+</form>
+
+
+    <h2>Forgot Password</h2>
+    <div id="root"></div>
+    <form id="frml">
+      Email: <input id="email" type="text" placeholder="Enter Email" required><br>
+      Security Question: <input id="ques1" type="text" placeholder="What is your Name"><br>
+      Security Question: <input id="ques2" type="text" placeholder="What is your Quest"><br>
+      Security Question: <input id="ques3" type="text" placeholder="Flight speed of Swallow"><br>
+
+      <br>
+
+      <input type="submit">
+      <input type="button" onclick="clickHandler()" Value="Print">
+
+
+    </form>
+
+    <h3>Login</h3>
+
+    <form id="frml">
+      Email or ID: <input id="email" type="text" placeholder="Enter Email/User Name" required><br>
+      Password: <input id="password" type="password" placeholder="Enter Password" required><br>
+
+      <br>
+
+      <input type="submit">
+      <input type="button" onclick="clickHandler()" Value="Print">
+      <input type="button" onclick="clickHandler()" Value="Forgot Password">
+
+
+
+    </form>
+
+    <script>
+        const clickHandler = () => {
+            const first = document.getElementById("fname").value;
+            const last = document.getElementById("lrame").value;
+            const dob = document.getElementById("dob").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const color = document.getElementById("color").value;
+            const pw = document.getElementById("password").value;
+            const pwConf = document.getElementById("passwordConf").value;
+            // alert(first + " " + last)
+            console. log (first, last, dob, email, phone, color, pw, pwConf)
+        }
+
+        const submitHandler = () => {
+            event.preventDefault()
+            Const fist = document.getElementById("fname").value;
+            const last = document.getElementById("lname").value;
+            const dob = document.getElementById("dob").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const color = document.getElementById("color").vaule;
+            const pw = document.getElementById("password").value;
+            const pwConf = document.getElementById("passwordConf").value;
+
+            console. log (first, last, dob, email, phone, color, pw, pwConf)
+            // alert(first + " " + last)
+        }
+    </script>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
